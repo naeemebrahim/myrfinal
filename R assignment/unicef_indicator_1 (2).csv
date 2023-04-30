@@ -1,0 +1,187 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Albania,AL,ALB,8,government expenditure (% GDP),2019,11.52394291,Total,,%,,,,Total
+Algeria,DZ,DZA,12,government expenditure (% GDP),2019,16.94609928,Total,,%,,,,Total
+Angola,AO,AGO,24,government expenditure (% GDP),2019,10.32928014,Total,,%,,,,Total
+Antigua and Barbuda,AG,ATG,28,government expenditure (% GDP),2018,16.39423687,Total,,%,,,,Total
+Argentina,AR,ARG,32,government expenditure (% GDP),2019,15.771007,Total,,%,,,,Total
+Armenia,AM,ARM,51,government expenditure (% GDP),2019,12.47208949,Total,,%,,,,Total
+Aruba,AW,ABW,533,government expenditure (% GDP),2017,16.68799123,Total,,%,,,,Total
+Australia,AU,AUS,36,government expenditure (% GDP),2019,19.00849089,Total,,%,,,,Total
+Austria,AT,AUT,40,government expenditure (% GDP),2019,19.44819859,Total,,%,,,,Total
+Azerbaijan,AZ,AZE,31,government expenditure (% GDP),2019,10.82724257,Total,,%,,,,Total
+Bahamas,BS,BHS,44,government expenditure (% GDP),2019,14.19786726,Total,,%,,,,Total
+Bahrain,BH,BHR,48,government expenditure (% GDP),2018,16.32192206,Total,,%,,,,Total
+Bangladesh,BD,BGD,50,government expenditure (% GDP),2019,6.271087165,Total,,%,,,,Total
+Barbados,BB,BRB,52,government expenditure (% GDP),2019,11.32601747,Total,,%,,,,Total
+Belarus,BY,BLR,112,government expenditure (% GDP),2019,15.85140623,Total,,%,,,,Total
+Belgium,BE,BEL,56,government expenditure (% GDP),2019,23.03444768,Total,,%,,,,Total
+Belize,BZ,BLZ,84,government expenditure (% GDP),2019,17.49162434,Total,,%,,,,Total
+Benin,BJ,BEN,204,government expenditure (% GDP),2019,10.34206324,Total,,%,,,,Total
+Bermuda,BM,BMU,60,government expenditure (% GDP),2019,11.99468795,Total,,%,,,,Total
+Bhutan,BT,BTN,64,government expenditure (% GDP),2019,18.29532223,Total,,%,,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,government expenditure (% GDP),2019,18.143092,Total,,%,,,,Total
+Bolivia,BO,BOL,68,government expenditure (% GDP),2019,18.143092,Total,,%,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,government expenditure (% GDP),2019,19.4788404,Total,,%,,,,Total
+Botswana,BW,BWA,72,government expenditure (% GDP),2019,18.42865015,Total,,%,,,,Total
+Brazil,BR,BRA,76,government expenditure (% GDP),2019,20.28256559,Total,,%,,,,Total
+Brunei Darussalam,BN,BRN,96,government expenditure (% GDP),2019,25.04039622,Total,,%,,,,Total
+Brunei,BN,BRN,96,government expenditure (% GDP),2019,25.04039622,Total,,%,,,,Total
+Bulgaria,BG,BGR,100,government expenditure (% GDP),2019,16.79017552,Total,,%,,,,Total
+Burkina Faso,BF,BFA,854,government expenditure (% GDP),2019,19.01860644,Total,,%,,,,Total
+Burundi,BI,BDI,108,government expenditure (% GDP),2019,27.63866828,Total,,%,,,,Total
+Cape Verde,CV,CPV,132,government expenditure (% GDP),2019,17.61331257,Total,,%,,,,Total
+Cambodia,KH,KHM,116,government expenditure (% GDP),2019,4.806798236,Total,,%,,,,Total
+Cameroon,CM,CMR,120,government expenditure (% GDP),2019,10.86084268,Total,,%,,,,Total
+Canada,CA,CAN,124,government expenditure (% GDP),2019,21.16648538,Total,,%,,,,Total
+Central African Republic,CF,CAF,140,government expenditure (% GDP),2019,14.9854307,Total,,%,,,,Total
+Chad,TD,TCD,148,government expenditure (% GDP),2019,3.587512578,Total,,%,,,,Total
+Chile,CL,CHL,152,government expenditure (% GDP),2019,14.59104328,Total,,%,,,,Total
+China,CN,CHN,156,government expenditure (% GDP),2019,16.77051095,Total,,%,,,,Total
+Hong Kong,HK,HKG,344,government expenditure (% GDP),2019,10.78013274,Total,,%,,,,Total
+Macao,MO,MAC,446,government expenditure (% GDP),2019,10.39202153,Total,,%,,,,Total
+Colombia,CO,COL,170,government expenditure (% GDP),2019,15.43288641,Total,,%,,,,Total
+Comoros,KM,COM,174,government expenditure (% GDP),2019,10.26242466,Total,,%,,,,Total
+Congo,CG,COG,178,government expenditure (% GDP),2019,12.22939507,Total,,%,,,,Total
+Costa Rica,CR,CRI,188,government expenditure (% GDP),2019,17.39080538,Total,,%,,,,Total
+Croatia,HR,HRV,191,government expenditure (% GDP),2019,19.72968297,Total,,%,,,,Total
+Cuba,CU,CUB,192,government expenditure (% GDP),2018,30.05308779,Total,,%,,,,Total
+Cyprus,CY,CYP,196,government expenditure (% GDP),2019,16.56131023,Total,,%,,,,Total
+Czech Republic,CZ,CZE,203,government expenditure (% GDP),2019,19.73773751,Total,,%,,,,Total
+Côte d'Ivoire,CI,CIV,384,government expenditure (% GDP),2019,10.11321959,Total,,%,,,,Total
+Ivory Coast,CI,CIV,384,government expenditure (% GDP),2019,10.11321959,Total,,%,,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,government expenditure (% GDP),2019,6.544999962,Total,,%,,,,Total
+Denmark,DK,DNK,208,government expenditure (% GDP),2019,23.84719117,Total,,%,,,,Total
+Djibouti,DJ,DJI,262,government expenditure (% GDP),2018,20.64625755,Total,,%,,,,Total
+Dominican Republic,DO,DOM,214,government expenditure (% GDP),2019,11.06879727,Total,,%,,,,Total
+Ecuador,EC,ECU,218,government expenditure (% GDP),2019,14.50466286,Total,,%,,,,Total
+Egypt,EG,EGY,818,government expenditure (% GDP),2019,7.660222084,Total,,%,,,,Total
+El Salvador,SV,SLV,222,government expenditure (% GDP),2019,15.95828535,Total,,%,,,,Total
+Equatorial Guinea,GQ,GNQ,226,government expenditure (% GDP),2019,26.04901519,Total,,%,,,,Total
+Eritrea,ER,ERI,232,government expenditure (% GDP),2011,26.61699434,Total,,%,,,,Total
+Estonia,EE,EST,233,government expenditure (% GDP),2019,19.85655291,Total,,%,,,,Total
+Swaziland,SZ,SWZ,748,government expenditure (% GDP),2019,20.71923988,Total,,%,,,,Total
+Ethiopia,ET,ETH,231,government expenditure (% GDP),2019,9.193046848,Total,,%,,,,Total
+Faroe Islands,FO,FRO,234,government expenditure (% GDP),2018,28.83766303,Total,,%,,,,Total
+Fiji,FJ,FJI,242,government expenditure (% GDP),2018,19.76664325,Total,,%,,,,Total
+Finland,FI,FIN,246,government expenditure (% GDP),2019,22.99630855,Total,,%,,,,Total
+France,FR,FRA,250,government expenditure (% GDP),2019,23.09564878,Total,,%,,,,Total
+Gabon,GA,GAB,266,government expenditure (% GDP),2019,10.99339673,Total,,%,,,,Total
+Gambia,GM,GMB,270,government expenditure (% GDP),2019,8.186615234,Total,,%,,,,Total
+Georgia,GE,GEO,268,government expenditure (% GDP),2019,12.99605097,Total,,%,,,,Total
+Germany,DE,DEU,276,government expenditure (% GDP),2019,20.42695815,Total,,%,,,,Total
+Ghana,GH,GHA,288,government expenditure (% GDP),2019,8.880743392,Total,,%,,,,Total
+Greece,GR,GRC,300,government expenditure (% GDP),2019,19.49102173,Total,,%,,,,Total
+Greenland,GL,GRL,304,government expenditure (% GDP),2018,44.13019336,Total,,%,,,,Total
+Guatemala,GT,GTM,320,government expenditure (% GDP),2019,11.07460611,Total,,%,,,,Total
+Guinea,GN,GIN,324,government expenditure (% GDP),2019,14.81090789,Total,,%,,,,Total
+Guinea-Bissau,GW,GNB,624,government expenditure (% GDP),2018,9.689179921,Total,,%,,,,Total
+Haiti,HT,HTI,332,government expenditure (% GDP),2019,7.534520834,Total,,%,,,,Total
+Honduras,HN,HND,340,government expenditure (% GDP),2019,13.48606334,Total,,%,,,,Total
+Hungary,HU,HUN,348,government expenditure (% GDP),2019,19.64518308,Total,,%,,,,Total
+Iceland,IS,ISL,352,government expenditure (% GDP),2019,24.34331578,Total,,%,,,,Total
+India,IN,IND,356,government expenditure (% GDP),2019,12.02850005,Total,,%,,,,Total
+Indonesia,ID,IDN,360,government expenditure (% GDP),2019,8.752598807,Total,,%,,,,Total
+"Iran, Islamic Republic of",IR,IRN,364,government expenditure (% GDP),2019,11.60836037,Total,,%,,,,Total
+Iraq,IQ,IRQ,368,government expenditure (% GDP),2019,23.64243866,Total,,%,,,,Total
+Ireland,IE,IRL,372,government expenditure (% GDP),2019,11.95139598,Total,,%,,,,Total
+Israel,IL,ISR,376,government expenditure (% GDP),2019,22.58880918,Total,,%,,,,Total
+Italy,IT,ITA,380,government expenditure (% GDP),2019,18.72052307,Total,,%,,,,Total
+Jamaica,JM,JAM,388,government expenditure (% GDP),2019,13.47298248,Total,,%,,,,Total
+Japan,JP,JPN,392,government expenditure (% GDP),2018,19.80081352,Total,,%,,,,Total
+Jordan,JO,JOR,400,government expenditure (% GDP),2019,15.03135947,Total,,%,,,,Total
+Kazakhstan,KZ,KAZ,398,government expenditure (% GDP),2019,9.132161576,Total,,%,,,,Total
+Kenya,KE,KEN,404,government expenditure (% GDP),2019,13.05287279,Total,,%,,,,Total
+Kiribati,KI,KIR,296,government expenditure (% GDP),2018,73.8764365,Total,,%,,,,Total
+Kuwait,KW,KWT,414,government expenditure (% GDP),2018,22.65691032,Total,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,government expenditure (% GDP),2019,16.80863951,Total,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,government expenditure (% GDP),2016,13.97094291,Total,,%,,,,Total
+Latvia,LV,LVA,428,government expenditure (% GDP),2019,19.06327159,Total,,%,,,,Total
+Lebanon,LB,LBN,422,government expenditure (% GDP),2019,15.88588403,Total,,%,,,,Total
+Lesotho,LS,LSO,426,government expenditure (% GDP),2019,39.6061677,Total,,%,,,,Total
+Liberia,LR,LBR,430,government expenditure (% GDP),2019,19.68198136,Total,,%,,,,Total
+Lithuania,LT,LTU,440,government expenditure (% GDP),2019,16.78073224,Total,,%,,,,Total
+Luxembourg,LU,LUX,442,government expenditure (% GDP),2019,17.09522098,Total,,%,,,,Total
+Madagascar,MG,MDG,450,government expenditure (% GDP),2019,14.25109145,Total,,%,,,,Total
+Malawi,MW,MWI,454,government expenditure (% GDP),2019,13.90670912,Total,,%,,,,Total
+Malaysia,MY,MYS,458,government expenditure (% GDP),2019,11.69484554,Total,,%,,,,Total
+Maldives,MV,MDV,462,government expenditure (% GDP),2019,15.4376181,Total,,%,,,,Total
+Mali,ML,MLI,466,government expenditure (% GDP),2019,15.74376023,Total,,%,,,,Total
+Malta,MT,MLT,470,government expenditure (% GDP),2019,17.17471661,Total,,%,,,,Total
+Marshall Islands,MH,MHL,584,government expenditure (% GDP),2018,56.34785202,Total,,%,,,,Total
+Mauritania,MR,MRT,478,government expenditure (% GDP),2019,12.84587537,Total,,%,,,,Total
+Mauritius,MU,MUS,480,government expenditure (% GDP),2019,15.3210514,Total,,%,,,,Total
+Mexico,MX,MEX,484,government expenditure (% GDP),2019,11.35833301,Total,,%,,,,Total
+Mongolia,MN,MNG,496,government expenditure (% GDP),2019,12.11367274,Total,,%,,,,Total
+Montenegro,ME,MNE,499,government expenditure (% GDP),2019,17.79790522,Total,,%,,,,Total
+Morocco,MA,MAR,504,government expenditure (% GDP),2019,19.36872921,Total,,%,,,,Total
+Mozambique,MZ,MOZ,508,government expenditure (% GDP),2019,21.67153428,Total,,%,,,,Total
+Myanmar,MM,MMR,104,government expenditure (% GDP),2018,18.30260383,Total,,%,,,,Total
+Burma,MM,MMR,104,government expenditure (% GDP),2018,18.30260383,Total,,%,,,,Total
+Namibia,,NAM,516,government expenditure (% GDP),2019,25.91279421,Total,,%,,,,Total
+Nepal,NP,NPL,524,government expenditure (% GDP),2019,11.56449883,Total,,%,,,,Total
+Netherlands,NL,NLD,528,government expenditure (% GDP),2019,24.50635424,Total,,%,,,,Total
+New Zealand,NZ,NZL,554,government expenditure (% GDP),2018,18.47526947,Total,,%,,,,Total
+Nicaragua,NI,NIC,558,government expenditure (% GDP),2019,15.64499872,Total,,%,,,,Total
+Niger,NE,NER,562,government expenditure (% GDP),2019,17.2370468,Total,,%,,,,Total
+Nigeria,NG,NGA,566,government expenditure (% GDP),2019,5.888083885,Total,,%,,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,government expenditure (% GDP),2019,14.03581777,Total,,%,,,,Total
+Norway,NO,NOR,578,government expenditure (% GDP),2019,24.4189375,Total,,%,,,,Total
+Oman,OM,OMN,512,government expenditure (% GDP),2019,24.57010797,Total,,%,,,,Total
+Pakistan,PK,PAK,586,government expenditure (% GDP),2019,11.73683929,Total,,%,,,,Total
+Palau,PW,PLW,585,government expenditure (% GDP),2018,33.14214274,Total,,%,,,,Total
+Panama,PA,PAN,591,government expenditure (% GDP),2019,11.91168369,Total,,%,,,,Total
+Paraguay,PY,PRY,600,government expenditure (% GDP),2019,11.77434448,Total,,%,,,,Total
+Peru,PE,PER,604,government expenditure (% GDP),2019,13.30488997,Total,,%,,,,Total
+Philippines,PH,PHL,608,government expenditure (% GDP),2019,12.52636698,Total,,%,,,,Total
+Poland,PL,POL,616,government expenditure (% GDP),2019,18.00193029,Total,,%,,,,Total
+Portugal,PT,PRT,620,government expenditure (% GDP),2019,16.88119327,Total,,%,,,,Total
+Puerto Rico,PR,PRI,630,government expenditure (% GDP),2019,8.738758303,Total,,%,,,,Total
+Qatar,QA,QAT,634,government expenditure (% GDP),2019,18.51963151,Total,,%,,,,Total
+"Korea, Republic of",KR,KOR,410,government expenditure (% GDP),2019,17.15938788,Total,,%,,,,Total
+South Korea,KR,KOR,410,government expenditure (% GDP),2019,17.15938788,Total,,%,,,,Total
+"Moldova, Republic of",MD,MDA,498,government expenditure (% GDP),2019,14.15363028,Total,,%,,,,Total
+Romania,RO,ROU,642,government expenditure (% GDP),2019,17.33318978,Total,,%,,,,Total
+Russian Federation,RU,RUS,643,government expenditure (% GDP),2019,18.30296576,Total,,%,,,,Total
+Russia,RU,RUS,643,government expenditure (% GDP),2019,18.30296576,Total,,%,,,,Total
+Rwanda,RW,RWA,646,government expenditure (% GDP),2019,15.80100776,Total,,%,,,,Total
+San Marino,SM,SMR,674,government expenditure (% GDP),2018,19.41127523,Total,,%,,,,Total
+Saudi Arabia,SA,SAU,682,government expenditure (% GDP),2019,23.84868471,Total,,%,,,,Total
+Senegal,SN,SEN,686,government expenditure (% GDP),2019,13.63249677,Total,,%,,,,Total
+Serbia,RS,SRB,688,government expenditure (% GDP),2019,16.64561632,Total,,%,,,,Total
+Seychelles,SC,SYC,690,government expenditure (% GDP),2019,21.42497859,Total,,%,,,,Total
+Sierra Leone,SL,SLE,694,government expenditure (% GDP),2019,8.37407357,Total,,%,,,,Total
+Singapore,SG,SGP,702,government expenditure (% GDP),2019,10.25289828,Total,,%,,,,Total
+Slovakia,SK,SVK,703,government expenditure (% GDP),2019,19.67437083,Total,,%,,,,Total
+Slovenia,SI,SVN,705,government expenditure (% GDP),2019,18.40249133,Total,,%,,,,Total
+Somalia,SO,SOM,706,government expenditure (% GDP),2019,11.94221771,Total,,%,,,,Total
+South Africa,ZA,ZAF,710,government expenditure (% GDP),2019,21.2957369,Total,,%,,,,Total
+South Sudan,SS,SSD,728,government expenditure (% GDP),2015,7.329147349,Total,,%,,,,Total
+Spain,ES,ESP,724,government expenditure (% GDP),2019,18.87389819,Total,,%,,,,Total
+Sri Lanka,LK,LKA,144,government expenditure (% GDP),2019,9.436436742,Total,,%,,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,government expenditure (% GDP),2019,20.18090476,Total,,%,,,,Total
+Sudan,SD,SDN,736,government expenditure (% GDP),2019,3.637864266,Total,,%,,,,Total
+Sweden,SE,SWE,752,government expenditure (% GDP),2019,25.85350164,Total,,%,,,,Total
+Switzerland,CH,CHE,756,government expenditure (% GDP),2019,11.90403218,Total,,%,,,,Total
+Tajikistan,TJ,TJK,762,government expenditure (% GDP),2017,17.82913055,Total,,%,,,,Total
+Thailand,TH,THA,764,government expenditure (% GDP),2019,16.13414071,Total,,%,,,,Total
+Timor-Leste,TL,TLS,626,government expenditure (% GDP),2019,47.41543157,Total,,%,,,,Total
+Togo,TG,TGO,768,government expenditure (% GDP),2019,15.98858621,Total,,%,,,,Total
+Tonga,TO,TON,776,government expenditure (% GDP),2012,18.9309203,Total,,%,,,,Total
+Tunisia,TN,TUN,788,government expenditure (% GDP),2019,20.51965392,Total,,%,,,,Total
+Turkmenistan,TM,TKM,795,government expenditure (% GDP),2017,7.79708005,Total,,%,,,,Total
+Turkey,TR,TUR,792,government expenditure (% GDP),2019,15.52729281,Total,,%,,,,Total
+Uganda,UG,UGA,800,government expenditure (% GDP),2019,8.820223818,Total,,%,,,,Total
+Ukraine,UA,UKR,804,government expenditure (% GDP),2019,19.91592034,Total,,%,,,,Total
+United Arab Emirates,AE,ARE,784,government expenditure (% GDP),2019,13.27841895,Total,,%,,,,Total
+United Kingdom,GB,GBR,826,government expenditure (% GDP),2019,18.83822381,Total,,%,,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,government expenditure (% GDP),2017,8.496345567,Total,,%,,,,Total
+United States,US,USA,840,government expenditure (% GDP),2019,13.97389268,Total,,%,,,,Total
+Uruguay,UY,URY,858,government expenditure (% GDP),2019,15.00295762,Total,,%,,,,Total
+Uzbekistan,UZ,UZB,860,government expenditure (% GDP),2019,16.38434106,Total,,%,,,,Total
+Vanuatu,VU,VUT,548,government expenditure (% GDP),2014,14.93003325,Total,,%,,,,Total
+"Venezuela, Bolivarian Republic of",VE,VEN,862,government expenditure (% GDP),2014,14.60335378,Total,,%,,,,Total
+Venezuela,VE,VEN,862,government expenditure (% GDP),2014,14.60335378,Total,,%,,,,Total
+Viet Nam,VN,VNM,704,government expenditure (% GDP),2019,6.460634703,Total,,%,,,,Total
+Vietnam,VN,VNM,704,government expenditure (% GDP),2019,6.460634703,Total,,%,,,,Total
+Zambia,ZM,ZMB,894,government expenditure (% GDP),2019,17.68419932,Total,,%,,,,Total
+Zimbabwe,ZW,ZWE,716,government expenditure (% GDP),2018,25.61874134,Total,,%,,,,Total
