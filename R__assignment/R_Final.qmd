@@ -1,0 +1,190 @@
+---
+title: "GLOBAL INSIGHTS: EXPLORING GOVERNMENT SPENDING, MILITARY EXPENDITURES, AND ECONOMIC FACTORS"
+output: html_document
+---
+
+```{r, echo=FALSE,warning=FALSE,results='asis'}
+knitr::kable(data.frame("Student Name" = "Naeem Ebrahim", 
+                        "Student ID" = "22266606", 
+                        "Programme" = "MSSM"),
+             row.names = FALSE)
+```
+
+```{r setup,echo=FALSE,warning=FALSE,message=FALSE}
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(readr)
+library(leaflet)
+library(htmltools)
+library(leaflet.extras)
+library(shiny)
+library(sfheaders)
+library(ggplot2)
+```
+
+```{r echo=FALSE, , fig.align='center',out.width="100%"}
+knitr::include_graphics("gdp_big.JPG", error=FALSE)
+```
+
+# **INTRODUCTION**
+
+The performance of countries across various continents is greatly influenced by factors such as government expenditure (%GDP), average population, military expenditure (%GDP), and economic indicators like inflation and GDP per capita. Assessing the relationship between these factors and their impact on a nation's performance is crucial for understanding the underlying dynamics and formulating effective policies.
+
+This analysis aims to provide an in-depth exploration of the interplay between government expenditure (%GDP), average population by continents (2015-2019), average military expenditure (%GDP) (2015-2019), Military Expenditure vs. Population (2014-2019) by Continent, and Inflation vs. GDP per Capita (2014-2019) by Continent. We employ a variety of data visualization techniques to showcase the connections between these factors and how they relate to the performance of countries in their respective continents. Visual representations such as world map, bar graphs, time-series charts, and scatterplots will be utilized to enhance understanding of the global landscape in terms of government spending, military expenditure, and economic factors, as well as their implications for nations worldwide.
+
+## **WORLD MAP: GLOBAL VIEW OF GOVERNMENT EXPENDITURE BY COUNTRIES**
+```{r load-data-3,echo=FALSE,warning=FALSE,message=FALSE, fig.align='center'}
+unicef_data <- read_csv("final_exel.csv", show_col_types = FALSE)
+
+world_map <- ne_countries(scale = "medium", returnclass = "sf")
+world_map_data <- world_map %>%
+  left_join(unicef_data, by = c("iso_a3" = "alpha_3_code"))
+
+world_map_chart <- ggplot() +
+  geom_sf(data = world_map_data, mapping = aes(fill = obs_value_ACTUAL), color = "white", size = 0.1) +
+  scale_fill_viridis_c(option = "plasma", name = "Observation Value") +
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  labs(title = "World Map Chart",
+       subtitle = "Observation Value by Country")
+
+world_map_chart
+```
+The map visualization shows the government expenditures of countries (in %) from that of the country's GDP. The map highlights the countries in different gradients which indicates the level of government expenditures made. The highest government expenditure is seen most in African countries and then in Asian countries, whereas the lowest government expenditure is seen in Greenland.
+
+## **BAR GRAPH: AVERAGE POPULATION BY CONTINENTS (2014-2019)**
+```{r load-data-5,echo=FALSE,warning=FALSE,message=FALSE, fig.align='center'}
+library(tidyverse)
+
+# read in the data
+final_exel <- read_csv("final_exel.csv")
+unicef_metadata <- read_csv("unicef_metadata (2).csv")
+
+# calculate average population by continent
+avg_pop_by_continent <- unicef_metadata %>%
+  filter(year %in% 2014:2019) %>%
+  group_by(alpha_3_code) %>%
+  summarise(avg_pop = mean(`Population, total`, na.rm = TRUE)) %>%
+  left_join(final_exel %>% select(alpha_3_code, Continent) %>% distinct(), 
+            by = "alpha_3_code") %>%
+  drop_na() %>%
+  group_by(Continent) %>%
+  summarise(avg_pop = mean(avg_pop, na.rm = TRUE))
+
+# create bar chart
+ggplot(avg_pop_by_continent, aes(x = Continent, y = avg_pop, fill = Continent)) +
+  geom_col() +
+  scale_fill_brewer(palette = "Set1") +
+  labs(title = "Average Population by Continent (2014-2019)", 
+       x = "Continent", y = "Average Population (Millions)") +
+  scale_y_continuous(labels = scales::unit_format(unit = "M", scale = 1e-6))
+```
+The bar graph shows the average population observed between different continents within the years 2015 to 2019. It helps to identify which continents has the highest or lowest observed values and to compare the values between them. The highest and lowest population is observed in Asia and Oceania respectively.
+
+## **TIME SERIES: AVERAGE MILITARY EXPENDITURE BY CONTINENTS (2014-2019)**
+```{r load-data-7,echo=FALSE,warning=FALSE,message=FALSE, fig.align='center'}
+library(tidyverse)
+
+# read in the data
+final_exel <- read_csv("final_exel.csv")
+unicef_metadata <- read_csv("unicef_metadata (2).csv")
+
+# calculate average military expenditure by continent and year
+avg_mil_exp_by_continent <- unicef_metadata %>%
+  filter(!is.na(`Military expenditure (% of GDP)`) & year %in% 2014:2019) %>%
+  left_join(final_exel %>% select(alpha_3_code, Continent) %>% distinct(), by = "alpha_3_code") %>%
+  filter(!is.na(Continent)) %>%
+  group_by(Continent, year) %>%
+  summarise(avg_mil_exp = mean(`Military expenditure (% of GDP)`)) 
+
+# create time series chart
+ggplot(avg_mil_exp_by_continent, aes(x = year, y = avg_mil_exp, group = Continent, color = Continent)) +
+  geom_line(size = 1) +
+  scale_color_brewer(palette = "Set1") +
+  labs(title = "Average Military Expenditure by Continent (2014-2019)",
+       x = "Year",
+       y = "Average Military Expenditure (% of GDP)",
+       color = "Continent") 
+```
+The time series shows the trends and patterns of the average military expenditure within the continents over time from 2014 to 2019. It helps to identify any seasonal or cyclical patterns in the data and to detect any trends or changes over time. The military expenditure in Asia is seen to be highest over the years and North America the lowest this could be due to the reason of North America having the production and supply of military equipment.
+
+```{r echo=FALSE, , fig.align='center',out.width="70%"}
+knitr::include_graphics("military_r.jpeg", error=FALSE)
+```
+
+## **SCATTERPLOT: AVERAGE MILITARY EXPENDITURE VS POPULATION BY CONTINENT (2014-2019)**
+```{r load-data-8,echo=FALSE,warning=FALSE,message=FALSE, fig.align='center'}
+library(tidyverse)
+
+# read in the data
+final_exel <- read_csv("final_exel.csv")
+unicef_metadata <- read_csv("unicef_metadata (2).csv")
+
+# calculate average military expenditure and population by continent
+avg_mil_pop_by_continent <- unicef_metadata %>%
+  filter(year %in% 2014:2019) %>%
+  select(alpha_3_code, `Population, total`, `Military expenditure (% of GDP)`) %>%
+  na.omit() %>%
+  left_join(final_exel %>% select(alpha_3_code, Continent) %>% distinct(), 
+            by = "alpha_3_code") %>%
+  filter(!is.na(Continent)) %>%
+  group_by(Continent) %>%
+  summarise(avg_population = mean(`Population, total`, na.rm = TRUE), 
+            avg_military_expenditure = mean(`Military expenditure (% of GDP)`, na.rm = TRUE))
+
+# create scatter plot with linear regression line
+# create scatter plot with linear regression line and modified x-axis labels
+ggplot(avg_mil_pop_by_continent, aes(x = avg_population, y = avg_military_expenditure, color = Continent)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_color_brewer(palette = "Set1") +
+  labs(title = "Military Expenditure vs. Population (2014-2019) by Continent", 
+       x = "Average Population (millions)", y = "Average Military Expenditure (% of GDP)") +
+  scale_x_continuous(labels = scales::unit_format(unit = "M", scale = 1e-6)) 
+```
+The given scatterplot indicates the relationship between two variables military expenditure and population by continents over the years from 2014 to 2019. It helps to identify the strength and direction of the relationship between the variables and to detect any patterns or trends in the data. The data shows as positive relationship within the variables where the military expenditure increases in relation to population. the trend is the same expect for North America and South America since they tend to produce and supply military goods.
+
+## **SCATTERPLOT: INFLATION VS GDP PER CAPITA BY CONTINENT (2014-2019)**
+```{r load-data-9,echo=FALSE,warning=FALSE,message=FALSE, fig.align='center'}
+library(tidyverse)
+
+# read in the data
+final_exel <- read_csv("final_exel.csv")
+unicef_metadata <- read_csv("unicef_metadata (2).csv")
+
+# calculate average GDP per capita and inflation by continent
+avg_gdp_inf_by_continent <- unicef_metadata %>%
+  filter(year %in% 2014:2019) %>%
+  select(alpha_3_code, `GDP per capita (constant 2015 US$)`, `Inflation, consumer prices (annual %)`) %>%
+  na.omit() %>%
+  left_join(final_exel %>% select(alpha_3_code, Continent) %>% distinct(), 
+            by = "alpha_3_code") %>%
+  group_by(Continent) %>%
+  summarise(avg_gdp_per_capita = mean(`GDP per capita (constant 2015 US$)`, na.rm = TRUE), 
+            avg_inflation = mean(`Inflation, consumer prices (annual %)`, na.rm = TRUE)) %>%
+  na.omit()
+
+# create scatter plot with linear regression line
+ggplot(avg_gdp_inf_by_continent, aes(x = avg_gdp_per_capita/1000, y = avg_inflation, color = Continent)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  scale_color_brewer(palette = "Set1") +
+  labs(title = "Inflation vs. GDP per Capita (2014-2019) by Continent", 
+       x = "Average GDP per Capita (in thousands of USD)", y = "Average Inflation (annual %)") 
+```
+This scatterplot visualization shows the relationship between the averages of Inflation and GDP per capita by continents in the years considering the years 2014 to 2109. The graph shows relatively similar trend within the continents concluding that the relations show a reduction in inflation as GDP per capita increases.
+
+## **CONCLUSION**
+This analysis has provided valuable insights into the relationship between government expenditures, military expenditures, and economic indicators on various continents. Compared to other continents, African countries have the highest government expenditures, while Greenland has the lowest. In comparison to other continents, Asia has the greatest average population, while Oceania has the lowest. The time series chart demonstrates that Asia has consistently higher military expenditures than other continents, while North America has the lowest. The scatterplots indicate a positive correlation between military expenditure and population, with the exception of North America and South America. In addition, the scatterplot of inflation and GDP per capita reveals a decreasing trend in inflation across continents as GDP per capita rises. These findings emphasize the significance of analyzing the relationship between various factors and their impact on a nation's performance in order to formulate effective policies for sustainable growth and development.
+
+```{r echo=FALSE,out.width="20%"}
+knitr::include_graphics("dcu_r.png", error=FALSE)
+```
+```{r echo=FALSE,out.width="20%"}
+knitr::include_graphics("gdp_small.jpeg", error=FALSE)
+```
+```{r echo=FALSE,out.width="20%"}
+knitr::include_graphics("unicef_r.jpeg", error=FALSE)
+```
